@@ -6,7 +6,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class DOMParserHotkey {
@@ -25,7 +24,6 @@ public class DOMParserHotkey {
         return hotkey;
     }
     public static void setHotkeyWithXMLNodeValues(NodeList nodeList) {
-
         DOMParserUtils.getNodeListStream(nodeList).forEach(node -> {
             Hotkeys hotkey = new Hotkeys();
             if (node instanceof Element) {

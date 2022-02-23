@@ -25,7 +25,6 @@ public class DOMParserJournal {
     }
 
     public static void setTitleWithXMLNodeValues(NodeList nodeList) {
-
         DOMParserUtils.getNodeListStream(nodeList).forEach(node -> {
             Journal journal = new Journal();
             if (node instanceof Element) {
@@ -40,5 +39,4 @@ public class DOMParserJournal {
             }
         });
     }
-
 }

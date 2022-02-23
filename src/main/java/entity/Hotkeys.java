@@ -1,7 +1,5 @@
 package entity;
 
-import java.util.List;
-
 public class Hotkeys {
     public String hotkey;
 
@@ -15,8 +13,6 @@ public class Hotkeys {
 
     @Override
     public String toString() {
-        return "Hotkeys{" +
-                "hotkey='" + hotkey + '\'' +
-                '}';
+        return "Hotkeys{" + "hotkey='" + hotkey + '\'' + '}';
     }
 }

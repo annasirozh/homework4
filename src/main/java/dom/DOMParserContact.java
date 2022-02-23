@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DOMParserContact {
-
     public static List<Contacts> contacts = new ArrayList<>();
 
     public static Contacts setContactsWithXMLChildNodeValues(Contacts contact, Node node) {
@@ -32,7 +31,6 @@ public class DOMParserContact {
     }
 
     public static void setContactsWithXMLNodeValues(NodeList nodeList) {
-
         DOMParserUtils.getNodeListStream(nodeList).forEach(node -> {
             Contacts contact = new Contacts();
             if (node instanceof Element) {

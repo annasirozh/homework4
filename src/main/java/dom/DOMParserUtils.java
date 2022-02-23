@@ -51,5 +51,4 @@ public class DOMParserUtils {
         return IntStream.range(0, nodeList.getLength())
                 .mapToObj(nodeList::item);
     }
-
 }
